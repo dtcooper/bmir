@@ -10,10 +10,9 @@ Here's some stuff that I've found useful for my work with BMIR.
    [JK Audio AutoHybrid](http://www.jkaudio.com/autohybrid.htm), and hack for an old
    VOIP ATA, described below.
 
-    - [`voip-two-way-howto.zip`](voip-two-way/voip-two-way-howto.zip): Zipped up,
-      archived HTML file explaining how to set up a two-way, ringing, ringdown or
-      "walkie-talkie" style phone line with an old
-      [Linksys PAPT2-NA](https://www.amazon.com/Linksys-PAP2T-NA/dp/B000Q7PDW2),
+    - [`voip-two-way-howto.tar.xz`](voip-two-way/voip-two-way-howto.tar.xz): Tarball of archived
+      HTML file explaining how to set up a two-way, ringing, ringdown or "walkie-talkie"
+      style phone line with an old [Linksys PAPT2-NA](https://www.amazon.com/Linksys-PAP2T-NA/dp/B000Q7PDW2),
       which I just happened to have. _(See: [the original how-to on
       instructables.com](https://www.instructables.com/id/Hack-a-VOIP-Box-Into-a-Telephone-Intercom/).)_
 
