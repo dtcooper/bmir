@@ -6,8 +6,8 @@ Here's some stuff that I've found useful for my work with BMIR.
 
 1. `voip-two-way/` &mdash; Helpers for setting up a two-way
    "[automatic ringdown](https://en.wikipedia.org/wiki/Ringdown#Non-operator_use)"
-   module for our broadcast desk. Interface into the board is a
-   [JK Audio AutoHybrid](http://www.jkaudio.com/autohybrid.htm), and hack for an old
+   module for our broadcast desk. Interface into the broadcast deskboard is a
+   ~~[JK Audio AutoHybrid](http://www.jkaudio.com/autohybrid.htm)~~ [JK Audio Broadcast Host](https://www.jkaudio.com/broadcast-host.htm), and hack for an old
    VOIP ATA, described below.
 
     - [`voip-two-way-howto.tar.xz`](voip-two-way/voip-two-way-howto.tar.xz): Tarball of archived
@@ -18,11 +18,11 @@ Here's some stuff that I've found useful for my work with BMIR.
 
         - Note to avoid weird, annoying ghost rings after hangup:
 
-            - ~with a [Cortelco 2500](https://www.amazon.com/dp/B002LLH3Q0) and the
+            - ~~with a [Cortelco 2500](https://www.amazon.com/dp/B002LLH3Q0) and the
               [Panasonic KX-TG6592T](https://www.amazon.com/gp/B004N4FE64), I had to change
               the _"Dial Plan"_ on line 1 and line 2 to `(S3<:line2@127.0.0.1:5061>)` and
               `(S3<:line1@127.0.0.1:5060>)`, respectively, ie `S0` to `S3` to have a 3 second
-              delay before dialing the other line.~
+              delay before dialing the other line.~~
 
             - No need to change the dial plan! I figure it out, however the _"VM tone detect"_
               feature on the [Panasonic KX-TG6592T](https://www.amazon.com/dp/B004N4FE64/)
