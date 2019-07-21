@@ -1,0 +1,25 @@
+digraph phone_layout {
+  rankdir=LR
+  node [color=red, shape=rectangle];
+  edge [dir=both, fontsize=10]
+
+  pap2_broadcast [label="PAP2 (Broadcast)\nw/ Internet"]
+  pap2_ringdown [label="PAP2 (Ringdown)\nRJ45 Loopback"]
+  broadcast_host [label="JK Broadcast Host"]
+  kill_switch [label="RJ11 Killswitch"]
+  studio_phone [label="Studio Phone"]
+  mixer [label="Mixer"]
+  ab_box [label="RJ11 A/B Box"]
+  installation_phone [label="\"Help Desk\" Phone\n(Art Installation)"]
+  lounge_phone [label="Lounge Phone \n(Talk to Art Installation)"]
+
+  pap2_broadcast -> broadcast_host [label="Phone #1 to Line"]
+  broadcast_host -> kill_switch [label="Phone"]
+  kill_switch -> studio_phone
+  broadcast_host-> mixer [label="XLRs", arrowhead="halfopen" arrowtail="halfopen"]
+
+  pap2_broadcast -> ab_box [label="Phone #2 to A\nLabel: Help Desk On Air"]
+  pap2_ringdown -> ab_box [label="Phone #1 to B\nLabel: Help Desk to Lounge"]
+  ab_box -> installation_phone [label="I/O (~1000ft)"]
+  pap2_ringdown -> lounge_phone [label="Phone #2"]
+}
